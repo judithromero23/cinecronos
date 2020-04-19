@@ -69,6 +69,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        pelip1 = new javax.swing.JPanel();
         cuenta = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -162,6 +163,7 @@ public class Principal extends javax.swing.JFrame {
         elegir.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 190, -1));
 
         panelPrincipal.add(elegir, "elegir");
+        panelPrincipal.add(pelip1, "pelip1");
 
         cuenta.setBackground(new java.awt.Color(102, 102, 102));
         cuenta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -581,7 +583,10 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_peli2MouseClicked
 
     private void peli1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_peli1MouseClicked
-        // TODO add your handling code here:
+        panelPrincipal.add(pelip1, "pelip1");
+        c.show(panelPrincipal, "pelip1");
+        SwingUtilities.updateComponentTreeUI(this);
+        this.repaint();
     }//GEN-LAST:event_peli1MouseClicked
 
     /**
@@ -670,6 +675,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel peli4;
     private javax.swing.JLabel peli5;
     private javax.swing.JLabel peli6;
+    private javax.swing.JPanel pelip1;
     private javax.swing.JMenuItem salir;
     private javax.swing.ButtonGroup sexo;
     private javax.swing.JTable tabla;
